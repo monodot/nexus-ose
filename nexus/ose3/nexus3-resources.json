@@ -45,8 +45,8 @@
             "source": {
                "type": "Git",
                "git": {
-                  "uri": "https://github.com/jorgemoralespou/nexus-ose",
-                  "ref": "master"
+                  "uri": "https://github.com/monodot/nexus-ose",
+                  "ref": "http-proxy"
                },
                "contextDir": "nexus/nexus3-container"
             },
