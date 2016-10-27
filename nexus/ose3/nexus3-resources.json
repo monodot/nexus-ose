@@ -153,7 +153,7 @@
                               "containerName": "nexus3",
                               "command": [
                                  "/bin/bash",
-                                 "/usr/local/bin/addjbossrepos.sh"
+                                 "/usr/local/bin/set-http-proxy.sh"
                               ],
                               "env": [
                                  {
