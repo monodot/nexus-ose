@@ -1,5 +1,5 @@
 {
   "name": "set-http-proxy",
   "type": "groovy",
-  "content": "def proxyUri = args.toURL(); def username = proxyUri?.getUserInfo()?.split(\":\")?.getAt(0); def password = proxyUri?.getUserInfo()?.split(\":\")?.getAt(1); def host = proxyUri?.getHost(); def port = proxyUri?.getPort(); core.httpProxyWithBasicAuth(host, port, username, password); println(\"Script set-http-proxy completed successfully\")"
+  "content": "log.info(\"Starting script set-http-proxy...\"); def proxyUri = args.toURL(); def username = proxyUri?.getUserInfo()?.split(\":\")?.getAt(0); def password = proxyUri?.getUserInfo()?.split(\":\")?.getAt(1); def host = proxyUri?.getHost(); def port = proxyUri?.getPort(); core.httpProxyWithBasicAuth(host, port, username, password); log.info(\"Script set-http-proxy completed successfully\")"
 }
